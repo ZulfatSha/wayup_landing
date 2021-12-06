@@ -1,0 +1,244 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+div, p, input, button, form, span, ul, li, a {
+    box-sizing: border-box;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(78,189,254,1);
+    background: -moz-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(135deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 100px;
+    padding-bottom: 125px;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer {
+    
+    width: 550px;
+    color: #fff;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.title span {
+    font-size: 45px;
+}
+
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    width: 420px;
+    margin-top: 30px;
+    margin-bottom: 37px;
+}
+
+.btn {
+    background: #ffd429;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 20px 0;
+    display: block;
+    width: 210px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #ffe507;
+}
+
+.desktop {
+    margin-top: 70px;
+}
+
+.learn {
+    padding-top: 109px;
+    padding-bottom: 120px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.scills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.scill {
+    width: 300px;
+    background: url('../img/icon1.jpg') no-repeat top;
+    padding-top: 100px;
+}
+
+.scill-title {
+    font-size: 18px;
+}
+
+.scill-text {
+    margin-top: 7px;
+}
+
+.scill-free {
+    
+    background: url('../img/icon2.jpg') no-repeat center top;
+}
+
+.scill-change {
+    width: 315px;
+    background: url('../img/icon3.jpg') no-repeat center top;
+}
+
+.mail {
+    background: #ecf3f8;
+    padding-top: 140px;
+    padding-bottom: 160px;
+}
+
+.form {
+    margin-top: 55px;
+}
+
+.input {
+    width: 470px;
+    border: 1px solid #bbbbbb;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: regular;
+    height: 55px;
+    padding-left: 24px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-input {
+    margin: 15px auto;
+}
+
+.btn-form {
+    width: 470px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 33px 0;
+    background: #164d7a;
+}
+
+.credits {
+    color: #fff;
+    text-align: center;
+}
+
+.animated {
+    opacity: 0;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+    .desktop {
+        display: block;
+	    width: 549px;
+	    margin: 70px auto 0;
+    }
+} 
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+        margin-top: 30px;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 70px auto 0;
+	}
+	.scills {
+		flex-direction: column;
+	}
+	.scill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+}
